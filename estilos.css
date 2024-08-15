@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #151515;
+    --cor02: #222222;
+    --cor03: #7A7D7D;
+    --cor04: #FAA613;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--cor01);
+}
+
+#player {
+    height: fit-content;
+    width: 100vw;
+}
+
+#capaMusica {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+#controles button {
+    height: 55px;
+    width: 55px;
+}
+
+#barraProgresso, #progressoAtual {
+    min-height: 15px;
+    transition: 0.25s;
+}
+
+#controles2 i:hover{
+    cursor: pointer;
+}
+
+#selecao {
+    background-color: var(--cor02);
+    height: 70vh;
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--cor03);
+        border-radius: 10px;
+    }
+}
+
+.item-playlist {
+    background-color: var(--cor03);
+    border: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.item-playlist img {
+    height: 100px;
+    width: 100px;
+}
